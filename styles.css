@@ -1,0 +1,282 @@
+        body{
+            margin:0%;
+            padding: 0%;
+            background-color: pink;
+            font-family: "Madimi One", sans-serif;
+            }
+        header{
+            display: flex;
+            background-color: deeppink;
+            align-items: center;
+            justify-content: space-between;
+              }
+        header nav ul{
+            display:flex;
+            gap: 3em;
+            font-family: cursive;
+            font-size: 1.5em;
+          
+        }
+        ol,
+        ul{
+            list-style: none;
+            
+        }
+        a{
+            text-decoration: none;
+            color:darkviolet;
+                
+        }
+        header a i{
+            font-size: 4em;
+            padding: 30%;
+        }
+        #acerca-de,
+        h2{
+            
+            font-size: 2em;
+            text-align: center;
+            font-family: "Madimi One", sans-serif;
+        }
+        #seccion-principal {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        footer,
+        h1,
+        ul{
+            text-align: center;
+        }
+        footer{
+            background-color: deeppink;
+        }
+         .acerca_de,
+         p,
+         p{
+            text-align: center;
+          }
+          #seccion_principal.seccion_2 {
+            margin: top 40px;; 
+        }
+        .float-list {
+            list-style-type: none; /* Quita los estilos de lista predeterminados */
+            padding: 0; /* Elimina el espacio interior de la lista */
+            display: flex; /* Utiliza flexbox para alinear los elementos en línea */
+            justify-content: space-between; /* Distribuye los elementos horizontalmente con espaciado entre ellos */
+        }
+    
+        .float-list li {
+            margin-right: 10px; /* Añade un espacio entre las imágenes (ajusta según sea necesario) */
+        }
+    
+        .float-list li img {
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            display: block; /* Cambia a display block para colocar las imágenes una debajo de la otra */
+            
+        }
+        .menu_icon img{
+            width: 30px;
+            height: 30px;
+
+            }
+
+        .menu_icon, #check{
+            display: none;
+        }
+
+        @media(max-width:768px){
+            .checkbtn{
+                display: block;
+            }
+        }
+        .menu_icon{
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .container{
+            display: block;
+        }
+        .nav-menu ul{
+            display:block;
+            position: fixed;
+            top: 70px;
+            left:-100%;
+            background: #222;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+        }
+        .nav-menu ul li{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+        }
+
+        .nav-menu ul li:last-child{
+            background: none;
+            padding: 1rem;
+        }
+       #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+       }
+       
+        
+/*QUERIES*/
+        
+@media (max-width: 768px) {
+    header{
+        background-color: aquamarine;
+        width: 200px;
+        
+      }
+    
+            
+  @media (max-width: 768px) {
+        .acerca-imagen img {
+            width: 180%; /* Reducir el ancho de la imagen al 50% */
+            margin-top: 20px; 
+    }
+     
+
+  }
+  @media (max-width: 768px) {
+    .checkbtn {
+       display: block;
+}
+
+}
+@media (max-width: 768px) {
+    .float-list li img {
+        width: 150px;
+        height: 150px;
+        display: block;
+        
+    }
+
+}
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:hotpink;
+  }
+  
+  .form-row input[type="text"] {
+    background-color:hotpink;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: hotpink;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+        text-align: center;
+        }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+        
+      
+      
+        color:purple;
+        background-color: plum;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color:chartreuse;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+          } 
